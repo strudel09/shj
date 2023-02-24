@@ -1,0 +1,26 @@
+import tkinter as tk
+from tkinter import messagebox
+
+def button_1():
+    messagebox.showinfo( "здравствуйте", name)
+window=tk.Tk()
+window.title("имя")
+window.geometry("300x300")
+
+name= tk.Entry()
+name.place(relx=0.3, rely=0.1)
+
+label = tk.Label(
+  text = "введите свое имя",
+  fg = "thistle",
+  bg = "gray19",
+  font = ("Arina",15),
+  width = 15,
+  height = 1)
+label.pack()
+button=tk.Button(
+    text="ввод",
+    width=10, command=button_1
+)
+button.place(relx=0.36, rely=0.18)
+window.mainloop()
